@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Générateur mdp</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+<form>
+    <h1 data-lang="js" id="output">Générateur mdp</h1>
+    <div id="nav">
+        <input type="range"  id="password-lenght" min="4" max="24" value="8" oninput="document.getElementById('display-password-length').value=this.value">
+        <input type="text" id="display-password-length" value="8" readonly>
+    </div>
+    <div>
+        <input type="checkbox" id="lower">
+        <label class="btn" for="lower">a-z</label>
+        <input type="checkbox" id="up">
+        <label class="btn" for="up">A-Z</label>
+        <input type="checkbox" id="int">
+        <label class="btn" for="int">0-9</label>
+        <input type="checkbox" id="spec">
+        <label  class="btn" for="spec">!-?</label>
+    </div>
+    <div id="content">
+        <input type="submit" value="Génerer" id="submit">
+        <p id="cop">Copié!</p>
+    </div>
+</form>
+</body>
+</html>
